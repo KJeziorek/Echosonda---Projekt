@@ -32,8 +32,9 @@ TODO - tutaj dodamy tabelkę, zdjęcia, wizualizację...
 
 W folderze *getGNSS* znajduje się kod dostosowany do uruchomienia modułu GNSS i weryfikacji poprawności połączenia. Zawiera w sobie dodatkowe komentarze z przypiskiem KJ, które tłumaczą poszczególne fragmenty kodu.
 
+W folderze *NonBlockingWrite* znajduje się kod dostosowany do uruchomienia modułu karty SD i weryfikacji poprawności połączenia. Zawiera w sobie dodatkowe komentarze z przypiskiem KJ, które tłumaczą poszczególne fragmenty kodu.
 
-
+W folderze *ourProject* znajdzie sie realizowany projekt, który będzie się opierał na powyższych folderach. 
 
 ## Pierwsze Uruchomienie
 
@@ -43,4 +44,19 @@ TODO
 ## Wyniki
 
 TODO
+
+
+## Dodatkowe linki
+
+Polecane poradniki do modułu Czytnika kart microSD:
+- https://www.arduino.cc/reference/en/libraries/sd/
+- https://mikrokontroler.pl/2022/06/15/zapisywanie-danych-z-czujnika-na-karcie-sd-w-systemie-arduino/
+
+Polecane poradniki do modułu odbiornika GPS:
+- https://wiki.dfrobot.com/SKU_TEL0157_Gravity_GNSS_Positioning_Module
+- https://github.com/DFRobot/DFRobot_GNSS
+
+Polecane poradniki do modułu Echosondy
+- https://botland.com.pl/content/144-pomiar-odleglosci-z-wykorzystaniem-arduino-i-czujnika-hc-sr04-lub-us-015
+
 
