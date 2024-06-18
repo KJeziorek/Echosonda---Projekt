@@ -6,8 +6,7 @@ Jest to repozytorium prezentujące realizację modelu do pomiarów batymetryczny
 
 - Moduł czytnika kart microSD ([link](https://botland.com.pl/akcesoria-do-kart-pamieci/8230-modul-czytnika-kart-microsd-5904422311278.html?cd=18298825138&ad=&kd=&gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyV3e0OKvE2_MWXHbHzuE3z-97jvh5oQhjkQfZgNQd0Qb-kYaUrYY7caAhA6EALw_wcB)) 
 
-
-![Moduł czytnika kart microSD](assets/modul-czytnika-kart-microsd.webp)
+<img src="assets/modul-czytnika-kart-microsd.webp" alt="Moduł czytnika kart microSD" width="400" height="300">
 
 - Moduł odbiornika GNSS GPS DFRobot TEL0157 ([link](https://botland.com.pl/moduly-gps/22671-gravity-modul-odbiornika-gnss-gps-beidou-i2cuart-dfrobot-tel0157-6959420923199.html?cd=18298825651&ad=&kd=&gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyVK5DkbfYtcIf9Kkr6AhN3Mr3t-RRxih82mm45TOmbRo41qDEjdA6waAuWuEALw_wcB)) 
 
