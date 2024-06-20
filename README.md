@@ -17,33 +17,55 @@ Jest to repozytorium prezentujące realizację modelu do pomiarów batymetryczny
 <img src="assets/ultradzwiekowy-czujnik-odleglosci-jsn-sr04t-20-450cm-z-sonda-wodoodporna.webp" alt="Ultradźwiękowy czujnik odległości" width="200" height="200">
 
 ## Jak rozpocząć pracę:
+
 Aby uruchomić program, należy najpierw zainstalować odpowiednie biblioteki:
 
-- *SD* by Arduino, SparkFun v1.2.4
-- *DFRobot_GNSS* by DFRobot v1.0.0
-- *TODO* - by TODO (biblioteka do echosondy)
+- **SD** by Arduino, SparkFun v1.2.4
+- **DFRobot_GNSS** by DFRobot v1.0.0
+- **jsnsr04t** by Overflaw v1.1.0
 
-Wszystko wykonujemy w programiue Arduino IDE w zakładce "Menedżer bibliotek" wpisując powyższe nazwy i klikając "Zainstaluj".
+Wszystko wykonujemy w programie Arduino IDE, w zakładce "Menedżer bibliotek", wpisując powyższe nazwy i klikając "Zainstaluj".
 
-Następnie podpinamy odpowiednio przewody modułów do PINów Arduino Uno w następującej kolejności:
+Następnie podpinamy odpowiednio przewody modułów do pinów Arduino Uno w następującej kolejności:
 
-TODO - tutaj dodamy tabelkę, zdjęcia, wizualizację...
+### Moduł GNSS
 
+|   Moduł   |  Arduino  |
+|-----------|-----------|
+|    RX     |   PIN 5   |
+|    TX     |   PIN 4   |
 
-W folderze *getGNSS* znajduje się kod dostosowany do uruchomienia modułu GNSS i weryfikacji poprawności połączenia. Zawiera w sobie dodatkowe komentarze z przypiskiem KJ, które tłumaczą poszczególne fragmenty kodu.
+### Moduł Echosondy
 
-W folderze *NonBlockingWrite* znajduje się kod dostosowany do uruchomienia modułu karty SD i weryfikacji poprawności połączenia. Zawiera w sobie dodatkowe komentarze z przypiskiem KJ, które tłumaczą poszczególne fragmenty kodu.
+|   Moduł   |  Arduino  |
+|-----------|-----------|
+|  ECHO PIN |   PIN 3   |
+|  TRIG PIN |   PIN 2   |
 
-W folderze *ourProject* znajdzie sie realizowany projekt, który będzie się opierał na powyższych folderach. 
+### Moduł Karty SD
+
+|   Moduł   |  Arduino  |
+|-----------|-----------|
+|    CS     |   PIN 10  |
+|   MOSI    |   PIN 11  |
+|   MISO    |   PIN 12  |
+|    SCK    |   PIN 13  |
+
+Wszystkie moduły zasilane są napięciem 5V.
+
+W folderze **getGNSS** znajduje się kod dostosowany do uruchomienia modułu GNSS i weryfikacji poprawności połączenia. Zawiera on dodatkowe komentarze z przypiskiem KJ, które tłumaczą poszczególne fragmenty kodu.
+
+W folderze **NonBlockingWrite** znajduje się kod dostosowany do uruchomienia modułu karty SD i weryfikacji poprawności połączenia. Zawiera on dodatkowe komentarze z przypiskiem KJ, które tłumaczą poszczególne fragmenty kodu.
+
+W folderze **ourProject** znajduje się realizowany projekt, który będzie się opierał na powyższych folderach. 
 
 ## Pierwsze Uruchomienie
 
 TODO
 
-
 ## Wyniki
 
-TODO
+Przykładowy wynik pomiaru znajduje się w folderze **output** jako plik o nazwie *hour_minute_second.csv*. Plik składa się z następujących danych: *year*, *month*, *day*, *hour*, *minute*, *second*, *latDirection*, *lonDirection*, *latitude*, *longitude*, *latDegree*, *lonDegree*, *distance*. Jeżeli wartość *distance* jest ujemna, oznacza to, że pomiar został wykonany dla odległości większej niż dany moduł może wykryć.
 
 
 ## Dodatkowe linki
